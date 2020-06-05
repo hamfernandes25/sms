@@ -11,5 +11,7 @@ curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data));
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
 $response = curl_exec($ch);
+echo $response;
+
 curl_close($ch);
 ?>
